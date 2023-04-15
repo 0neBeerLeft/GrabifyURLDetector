@@ -1,3 +1,11 @@
+function isUrlValid(userInput) {
+    var res = userInput.match(/(http(s)?:\/\/.)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/g);
+    if(res == null)
+        return false;
+    else
+        return true;
+}
+
 function check() {
     var jobValue = document.getElementsByName('txtJob')[0].value
     var a = ['mymassive.yachts',
@@ -44,16 +52,22 @@ function check() {
     'joinmy.site',
     'fortnitechat.site',
     'fortnight.space',
-    'stopify.co']
-
-    for (var i in a) {
-        if (jobValue.indexOf(a[i]) > -1) {
-            document.getElementById("result").innerHTML = "Grabify url detected!"; 
-            document.getElementById("result").style.color = "red";
-            break
-        }else{
-            document.getElementById("result").innerHTML = "Url is clear";  
-            document.getElementById("result").style.color = "green"
+    'stopify.co',
+    ]
+    if (isUrlValid(jobValue)){
+        for (var i in a) {
+            if (jobValue.indexOf(a[i]) > -1) {
+                document.getElementById("result").innerHTML = "Grabify url detected!"; 
+                document.getElementById("result").style.color = "red";
+                break
+            }else{
+                document.getElementById("result").innerHTML = "Url is clear";  
+                document.getElementById("result").style.color = "green"
+            }
         }
+    }
+    else{
+        document.getElementById("result").innerHTML = "Invalid url";  
+        document.getElementById("result").style.color = "yellow"
     }
 }
