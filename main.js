@@ -43,8 +43,7 @@ function check() {
     'joinmy.site',
     'fortnitechat.site',
     'fortnight.space',
-    'stopify.co',
-    ]
+    'stopify.co']
 
     for (var i in a) {
         if (jobValue.indexOf(a[i]) > -1) {
