@@ -1,6 +1,7 @@
 function check() {
     var jobValue = document.getElementsByName('txtJob')[0].value
     var a = ['mymassive.yachts',
+    'grabify.link',
     'stonks.boats',
     'stonks.fun',
     'toes.beauty',
