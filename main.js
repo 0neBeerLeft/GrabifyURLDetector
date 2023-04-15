@@ -49,9 +49,11 @@ function check() {
     for (var i in a) {
         if (jobValue.indexOf(a[i]) > -1) {
             document.getElementById("result").innerHTML = "Grabify url detected!"; 
+            document.getElementById("result").style.color = "red";
             break
         }else{
             document.getElementById("result").innerHTML = "Url is clear";  
+            document.getElementById("result").style.color = "green"
         }
     }
 }
