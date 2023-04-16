@@ -53,6 +53,23 @@ function check() {
     'fortnitechat.site',
     'fortnight.space',
     'stopify.co',
+    'iplogger.org',
+    'iplogger.com',
+    'maper.info',
+    'iplogger.ru',
+    'iplogger.co',
+    '2no.co',
+    'yip.su',
+    'iplogger.info',
+    'ipgrabber.ru',
+    'ipgraber.ru',
+    'iplis.ru',
+    '02ip.ru',
+    'ezstat.ru',
+    'iplogger.cn',
+    'wl.gl',
+    'ed.tc',
+    'bc.ax',
     ]
     if (isUrlValid(jobValue)){
         for (var i in a) {
