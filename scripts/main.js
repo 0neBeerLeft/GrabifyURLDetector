@@ -74,7 +74,7 @@ function check() {
     if (isUrlValid(jobValue)){
         for (var i in a) {
             if (jobValue.indexOf(a[i]) > -1) {
-                document.getElementById("result").innerHTML = "This is a Grabify URL. Proceed with caution."; 
+                document.getElementById("result").innerHTML = "This is a tracking URL. Proceed with caution."; 
                 document.getElementById("result").style.color = "red";
                 break
             }else{
