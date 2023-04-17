@@ -18,6 +18,7 @@ function check() {
     'gamer.tattoo',
     'shipment.website',
     'imagevault.cloud',
+    'ythingy.com',
     'sugma.mom',
     'yum.mom',
     'plz.life',
