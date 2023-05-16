@@ -22,6 +22,7 @@ function check() {
     'sugma.mom',
     'yum.mom',
     'plz.life',
+    'photovault.pics',
     'massive.mom',
     'massive.boats',
     'mymassive.store',
