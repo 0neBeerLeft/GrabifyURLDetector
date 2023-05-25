@@ -1,11 +1,64 @@
 <!DOCTYPE html>
 <html>
 <body style="background-color:#121416">
-<button onclick="window.location.href = 'domains.txt';" style="width: 125px; display: inline-block;outline: 0;cursor: pointer;border: none;padding: 0 30px;line-height: 40px;border-radius: 100px;font-weight: 200;font-size: 16px;background: rgb(84, 105, 212);color: #fff;box-shadow: 0 4px 14px 0 rgb(0 0 0 / 10%);height: 40px;">Domains</button>
 <style>
-    button:hover {
-        color: salmon;
+    #sign{
+        position: relative;
+        color: #fff;
+        font-size: 60px;
+        top: 40px;
     }
+    #info{
+        position: relative;
+        color:#fff;
+        top: 10px;
+    }
+    #text{
+        height: 35px;
+        width: 400px;
+        font-size: 24px;
+        text-align:center;
+        color: #fff;
+        border-radius: 7px;
+        background-color: #2f3135;
+        border-color: #5469d4;
+        border-style: solid;
+        border-width: thin;
+        padding-top: 3px;
+        outline:none;
+    }
+    #text:focus{
+        border-width: 2px;
+    }
+    #button{
+        position: relative;
+        width: 230px;
+        height: 40px;
+        bottom: -7px;
+        background-color: #5469d4;
+        border-width: thin;
+        border-radius: 6px;
+        color: #fff;
+        font-size: 20px;
+        border-color: #465edb;
+    }
+
+    #button:hover {
+        opacity: 0.5;
+    }
+
+    #domainsButton{
+        position: relative;
+        width: 100px;
+        height: 30px;
+        background-color: #5469d4;
+        border-width: 0px;
+        border-radius: 6px;
+        color: #fff;
+        border-color: #465edb;
+        border-width: thin;
+    }
+
     @font-face {
         font-family: FontCust;
         src: url(fonts/Font.otf);
@@ -34,14 +87,18 @@
         document.onkeypress = stopRKey; 
 
         </script>
-        <input name="txtJob" style="margin-bottom: 5px;font-size: 25px;width: 400px; height: 20px;border-radius: 4px;height: 40px;padding: 6px 12px;line-height: 1.5;color: #212529;background-color: #fff;background-clip: padding-box;border: 1px solid #ced4da;appearance: none;border-radius: 4px;" id="text" type="textbox" /><br/>
-        <input style="width: 400px; display: inline-block;outline: 0;cursor: pointer;border: none;padding: 0 56px;height: 45px;line-height: 45px;border-radius: 7px;font-weight: 400;font-size: 16px;background: rgb(84, 105, 212);color: #fff;box-shadow: 0 4px 14px 0 rgb(0 0 0 / 10%);height: 50px;" onclick="check()" id="button" type="button" value="submit" />
-        <h1 id="result"></h1>
+        <h1 id="sign">Anti-Tracker :></h1>
+        <p id="info">Url:</p>
+        <input name="txtJob" id="text" type="textbox" /><br/>
+        <input onclick="check()" id="button" type="button" value="submit" />
+        <p id="info">Result:</p>
+        <h1 id="result" style="text-align: center;white-space: nowrap;color: #fff;border-style: solid;width:max-content;margin: auto;padding-top: 3px;padding-bottom: 3px;padding-left: 5px;padding-right: 5px;">None</h1>
     </form>
 </div>
     <div style="display: block;text-align: center; margin-top: 0%;" id="div">
-    <h1 style="color: white;">About</h1>
     <h3 style="display: block;color: white;font-weight: 100;">71 Domains in the Database</h3>
+    <button id="domainsButton" onclick="document.location='domains.txt'">Domains</button>
+    <button id="domainsButton" onclick="document.location='https://www.lawrenceprospera.org/images/quintana/Page_Under_Construction.jpg'">Remove me</button>
 
 </div>
 </body>
