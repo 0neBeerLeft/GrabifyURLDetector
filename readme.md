@@ -1,24 +1,33 @@
 # Grabify URL Detector Website
 
-This is a website project that allows you to check if a given URL is a Grabify URL, which is a type of URL that is used to steal user information and IP addresses. The website is built using JavaScript, HTML, and CSS.
+This is a website project that allows you to check if a given URL is a Grabify URL, which is a type of URL used to steal user information and IP addresses. The website is built using JavaScript, HTML, and CSS.
+
+## Why I Made This Tool
+
+It is common for people on Discord and the web to send IP logger links to others in order to take down their internet or threaten them with DDoS attacks. I created this tool to help people easily identify if a link is an IP logger, providing a simple way to stay safe online.
 
 ## How it Works
 
-The website works by taking a user-inputted URL and analyzing it to determine if it is a Grabify URL. It does this by checking if the URL contains any of the known Grabify domains or IP addresses.
+The website analyzes user-inputted URLs to determine if they match known Grabify domains or IP addresses. It does this by checking against an updated list of Grabify domains.
 
-If the URL is determined to be a Grabify URL, the website will display a warning message to the user informing them of the potential security risk. If the URL is not a Grabify URL, the website will display a message indicating that the URL is safe to visit.
+- If the URL is identified as a Grabify URL, a warning message is displayed to inform the user of the potential security risk.
+- If the URL is not a Grabify URL, the website will display a message indicating that the URL appears to be safe.
 
-The detection algorithm used in this website is based on a list of known Grabify domains. This list is regularly updated to ensure the website remains effective at detecting Grabify URLs.
+The detection algorithm relies on a maintained list of known Grabify domains, ensuring effective and up-to-date detection.
 
 ## Usage
 
-To use the Grabify URL Detector, simply go to the website and enter the URL you want to check in the input field provided. Then click on the "Check" button. The website will display a message indicating whether the URL is a Grabify URL or not.
+1. Go to the website.
+2. Enter the URL you want to check in the input field.
+3. Click on the "Check" button.
+4. The website will indicate whether the URL is a Grabify URL or not.
 
 ## Contributing
 
-Contributions to this project are welcome. If you notice any issues or have suggestions for improvement, please open an issue or submit a pull request.
+Contributions to this project are welcome! If you notice any issues or have suggestions for improvements:
+- Open an issue
+- Submit a pull request
 
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
-
